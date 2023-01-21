@@ -62,7 +62,7 @@ namespace Daybreak_
 
             lastTime = currentTime;
         }
-        public static void PlaySoundAtBanner(Players.Player player, BannerTracker.Banner banner, string soundname)
+        public static void PlaySoundAtBanner(BannerTracker.Banner banner, string soundname)
         {
             UnityEngine.Vector3 bannerpos = new UnityEngine.Vector3(banner.Position.x, banner.Position.y, banner.Position.z);
             AudioManager.SendAudio(bannerpos, soundname);
@@ -70,14 +70,13 @@ namespace Daybreak_
 
         public static void PlayDaybreakSoundForPlayer(Players.Player player, bool OnlyActiveColony)
         {
-            string daybreaksound = "db_citybell_daybreak_small";
 
             if (OnlyActiveColony)
             {
                 try
                 {
                     BannerTracker.Banner b = player.ActiveColony.Banners[0];
-                    PlaySoundAtBanner(player, b, daybreaksound);
+                    PlaySoundAtBanner(b, "daybreak");
 
                 }
                 catch (System.Exception)
@@ -93,7 +92,7 @@ namespace Daybreak_
 
                 foreach (var banner in bannerlist)
                 {
-                    PlaySoundAtBanner(player, banner, daybreaksound);
+                    PlaySoundAtBanner(banner, "daybreak");
                 }
             }
 
@@ -101,14 +100,13 @@ namespace Daybreak_
         }
         public static void PlayNightfallSoundForPlayer(Players.Player player, bool OnlyActiveColony)
         {
-            string nightfallsound = "db_citybell_nightfall_small";
 
             if (OnlyActiveColony)
             {
                 try
                 {
                     BannerTracker.Banner b = player.ActiveColony.Banners[0];
-                    PlaySoundAtBanner(player, b, nightfallsound);
+                    PlaySoundAtBanner(b, "nightfall");
                 }
                 catch (System.Exception)
                 {
@@ -123,7 +121,7 @@ namespace Daybreak_
 
                 foreach (var banner in bannerlist)
                 {
-                    PlaySoundAtBanner(player, banner, nightfallsound);
+                    PlaySoundAtBanner(banner, "nightfall");
                 }
             }
         }
