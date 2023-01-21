@@ -1,0 +1,23 @@
+﻿[
+
+  {
+    "name": "Daybreak+",
+    "description": "Plays a sound at all banners at daybreak and nightfall",
+    "version": "0.1.0.0",
+    "dllpath": "Daybreak+.dll",
+    "compatibleversions": [
+      "0.9.0"
+
+    ],
+    "jsonFiles": [
+      {
+        "fileType": "addOrReplaceAudio",
+        "index": -1000001,
+        "relativePath": "audioFiles.json"
+      }
+
+    ]
+  }
+
+
+]

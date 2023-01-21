@@ -1,0 +1,22 @@
+﻿[
+  {
+    "clipCollectionName": "daybreak",
+    "fileList": [
+      {
+        "audioGroup": "Effects",
+        "path": "./sounds/daybreak.ogg"
+      }
+    ],
+    "range": 30
+  },
+  {
+    "clipCollectionName": "nightfall",
+    "fileList": [
+      {
+        "audioGroup": "Effects",
+        "path": "./sounds/nightfall.ogg"
+      }
+    ],
+    "range": 30
+  }
+]
