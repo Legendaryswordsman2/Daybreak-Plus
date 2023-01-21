@@ -26,8 +26,7 @@ namespace Daybreak_
             {
                 if (currentTime > TimeCycle.SunRise && lastTime <= TimeCycle.SunRise)
                 {
-                    Log.Write("Playing Daybreak sounds.");
-                    int playercount = Players.ConnectedPlayers.Count;
+                    //Log.Write("Playing Daybreak sounds.");
 
                     for (int i = 0; i < Players.ConnectedPlayers.Count; i++)
                     {
@@ -37,7 +36,7 @@ namespace Daybreak_
                 }
                 if (currentTime > TimeCycle.SunSet && lastTime <= TimeCycle.SunSet)
                 {
-                    Log.Write("Playing Nightfall sounds.");
+                    //Log.Write("Playing Nightfall sounds.");
 
                     for (int i = 0; i < Players.ConnectedPlayers.Count; i++)
                     {
@@ -45,18 +44,7 @@ namespace Daybreak_
                         PlayNightfallSoundForPlayer(Players.ConnectedPlayers[i], false);
                     }
                 }
-
-
             }
-
-
-
-
-
-
-
-
-
             // check nightfall
             //TimeCycle.SunSet;
 
@@ -70,7 +58,6 @@ namespace Daybreak_
 
         public static void PlayDaybreakSoundForPlayer(Players.Player player, bool OnlyActiveColony)
         {
-
             if (OnlyActiveColony)
             {
                 try
@@ -95,12 +82,9 @@ namespace Daybreak_
                     PlaySoundAtBanner(banner, "daybreak");
                 }
             }
-
-
         }
         public static void PlayNightfallSoundForPlayer(Players.Player player, bool OnlyActiveColony)
         {
-
             if (OnlyActiveColony)
             {
                 try
