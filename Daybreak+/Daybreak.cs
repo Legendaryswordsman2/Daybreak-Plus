@@ -22,7 +22,7 @@ namespace Daybreak_
             {
                 if (currentTime > TimeCycle.SunRise && lastTime <= TimeCycle.SunRise)
                 {
-                    Log.Write("Playing Daybreak sound at all active banners.");
+                    //Log.Write("Playing Daybreak sound at all active banners.");
 
                     for (int i = 0; i < Players.ConnectedPlayers.Count; i++)
                     {
@@ -31,7 +31,7 @@ namespace Daybreak_
                 }
                 if (currentTime > TimeCycle.SunSet && lastTime <= TimeCycle.SunSet)
                 {
-                    Log.Write("Playing Nightfall sound at all active banners.");
+                    //Log.Write("Playing Nightfall sound at all active banners.");
 
                     for (int i = 0; i < Players.ConnectedPlayers.Count; i++)
                     {
