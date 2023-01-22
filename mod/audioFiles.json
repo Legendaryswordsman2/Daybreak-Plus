@@ -7,7 +7,7 @@
         "path": "./sounds/daybreak.ogg"
       }
     ],
-    "range": 50
+    "range": 100
   },
   {
     "clipCollectionName": "nightfall",
@@ -17,6 +17,6 @@
         "path": "./sounds/nightfall.ogg"
       }
     ],
-    "range": 50
+    "range": 100
   }
 ]
